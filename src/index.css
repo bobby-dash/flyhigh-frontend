@@ -1,0 +1,97 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(21, 192, 107, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logout-btn {
+  padding: 8px 15px;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  width: 200px;
+  background: rgba(12, 209, 94, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+input, button, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+input, textarea {
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+button {
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
